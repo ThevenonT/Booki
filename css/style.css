@@ -1,0 +1,554 @@
+*, body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.padding{
+    padding-left:20px;
+    padding-right: 20px;
+}
+/* navbar */
+.navbar{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    
+    
+    
+}
+.navbar img{
+  
+    width: 80px;
+    position: relative;
+    left: 70px;
+    
+}
+.navbar__lien {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    right: 50px;
+   
+}
+.navbar__lien a{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding: 20px;
+       font-size: 17px;
+         text-decoration: none;
+    color: rgb(89, 89, 89);
+  
+}
+
+.navbar__lien a:hover{
+    border-top: 5px solid #0065FC;
+    color: #0065FC;
+     cursor: pointer;
+}
+.navbar__lien a:hover {
+   color: #0065FC;
+  
+    
+}
+/* fin de navbar */
+
+section h1{
+    font-size:17px;
+}
+
+/* formulaire */
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+form i.loc{
+    background-color: #F2F2F2;
+    height:100%;
+    padding: 14.8px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+form .text{
+    height:100%;
+    padding: 11px;
+    border: 2px solid #F2F2F2;
+}
+form .text::placeholder{
+        font-weight: bolder;
+        color: black;
+    }
+form .submit{
+    height: 100%;
+    padding: 13.5px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.mobile{
+    display:none;
+}
+/* fin de formulaire */
+
+/* filtre */
+.Filtre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.Filtres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Filtres .filtre:hover{
+     background-color:#0065FC;
+    color:#DEEBFF;
+    max-height: 100%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.Filtres .filtre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 0px;
+    max-height: 45px;
+    border: 2px solid #05152c30;
+    border-radius: 50px;
+    transition: all 0.1s linear;
+}
+.filtre i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 5px;
+    font-size: 20px;
+    color: #0065FC;
+    background-color:#DEEBFF;
+    min-width:40px;
+    padding: 12px;
+    border-radius: 50%;
+}
+.filtre p {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+/* fin de filtre */
+
+/* info */
+.info{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: 15px;
+}
+.i{
+
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    padding: 5px;
+    margin-right: 5px;
+    border:1px solid rgba(169, 169, 169, 0.822);
+    border-radius: 20px;
+    color: #0065FC;
+    }
+/* fin info */
+
+/* Conteners */
+
+.CONTENTS{
+    padding: 20px;
+}
+.Containers{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+   
+    min-height: 500px ;
+    max-height: 600px;
+
+}
+.container{
+    background-color:#F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+ 
+    
+    flex-basis: 64%;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 20px;
+
+    
+}
+.container h2{
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h4{
+    font-size: 13px;
+    padding-left: 25px;
+}
+.cards{
+    position:static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:100%;
+    padding: 10px;
+}
+.card{
+    background-color:white;
+    box-shadow: 0px 0px 10px 1px  rgba(0, 0, 0, 0.37) ;
+    border-radius: 20px;
+    width: 30%;
+    height: 150px; 
+    margin: 10px; 
+    padding: 5px; 
+    transition: all 0.1s linear;
+}
+.card:hover{
+    cursor: pointer;
+    transform: rotateX(5deg) rotateY(5deg) rotateZ(10deg)  ;
+    transition: all 0.2s linear;
+}
+.fa-star{
+    
+    color: blue;
+    font-size: 10px;
+   padding: 0px;
+   margin: 0px;
+}
+.startFlex{
+    display: flex;
+    flex-direction: row;
+
+}
+.black{
+    color:#d8d5d5;
+}
+.TxtHcard{
+
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.TxtHcard h3{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.TxtHcard p{
+    font-size: 10px
+}
+.img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover; 
+}
+
+
+/* declaration des images */
+
+
+.More:hover a{
+    background-color: white;
+    border: 1px solid black; 
+    border-radius: 5px;
+    padding: 5px;
+
+}
+h2{
+    font-size: 16px;
+    
+}
+h3{
+    font-size: 14px;
+}
+h4{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+p{
+    font-size: 12px;
+}
+#container{
+    flex-basis: 30%;
+    height:100%;
+    max-width: 600px;
+}
+
+.Ptxt{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-between;
+    width: 90%;
+
+}
+.Pcards{
+    position:static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:100%;
+    padding: 10px;
+}
+.Pcard{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  
+    min-height: 120px;
+    max-height: 100px;
+    min-width: 250px;
+    max-width: 500px;
+    box-shadow: 0px 0px 10px 1px  rgba(0, 0, 0, 0.37) ;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+.Pcard:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.1s linear;
+    
+}
+.Pcard h3{
+    font-size: 13px;
+}
+.Pimg{
+
+    height: auto;
+    width: 35%;
+    margin: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+}
+
+
+
+.TxtCard{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+}
+.textCard h3, .textCard p{
+    padding-top: 5px;
+}
+/* fin Conteners */
+
+/* Activite container */
+.ActiviteContainers{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+
+}
+.ActiviteContainers h3{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items : center;
+    
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.large:hover, .medium:hover{
+    
+    transform: rotateZ(5deg) scale(1.1);
+    transition: all 0.2s linear;
+}
+.small:hover{
+    transform: rotateZ(-10deg) scale(1.2);
+    transition: all 0.2s linear;
+}
+.large{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 22%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 1px  rgba(0, 0, 0, 0.37) ;
+    transition: all 0.2s linear;
+}
+.large p {
+    margin: 10px;
+    padding: 5px;
+}
+
+.ActImgL, .ActImgL2{
+  
+    width: 100%;
+    height:90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit:cover;
+}
+
+.ActImgM, .ActImgM2{
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.ActImgS, .ActImgS2{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.medium{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width:22%;
+    height:50%;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+    box-shadow: 0px 3px 10px 1px  rgba(0, 0, 0, 0.37) ;
+}
+.medium p {
+    margin: 10px;
+    padding: 5px;
+}
+
+.small{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width:22%;
+    height:35%;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+    box-shadow: 0px 3px 10px 1px  rgba(0, 0, 0, 0.37) ;
+}
+.small p {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Fin Activite container */
+
+
+/* footer */
+footer{
+   
+    
+    max-height: 300px;
+   
+    height:100%;
+    max-width: 100%;
+    min-width: 100%;
+   
+    margin-top: 20px;
+    padding-top: 20px;
+   
+    background-color:#F2F2F2;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer div div h2{
+   font-size: 13px;
+   margin-bottom: 20px ;
+
+}
+footer div div p{
+   font-size: 13px;
+
+}
+footer div h2, footer div p{
+    margin-left: 0;
+    margin-bottom: 10px ;
+}
+.FooterContainers{
+    
+    width: 71%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+/* fin footer */
+
