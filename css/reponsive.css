@@ -11,6 +11,9 @@
     a.card{
        width:45%;
     }
+    .Pcard:hover{
+        transform: scale(1.05);
+    }
 }
 @media (max-width: 970px ) {
     
